@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chat-analyzer-ext"
+version = "0.0.1"
+description = "A small example package"
+requires-python = ">= 3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+
+[project.entry-points."chat-analyzer.v1.blueprints"]
+foo = "chat-analyzer-ext:foo"
