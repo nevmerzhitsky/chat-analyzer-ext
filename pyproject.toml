@@ -15,4 +15,4 @@ classifiers = [
 ]
 
 [project.entry-points."chat_analyzer.v1.blueprints"]
-foo = "chat_analyzer_ext:foo"
+foo = "chat_analyzer_test_ext:foo"
