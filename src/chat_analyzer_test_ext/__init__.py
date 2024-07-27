@@ -1,10 +1,9 @@
 from flask import Flask
 
-from test import test_bp
+from .test import test_bp
 
 
 def inject_blueprint(app: Flask):
-    print(f"{app=}")
     app.register_blueprint(test_bp, template="./templates")
 
 
