@@ -15,4 +15,5 @@ classifiers = [
 ]
 
 [project.entry-points."chat_analyzer.v1.blueprints"]
-foo = "chat_analyzer_test_ext:foo"
+inject_blueprint = "chat_analyzer_test_ext:inject_blueprint"
+inject_menu = "chat_analyzer_test_ext:inject_menu"
