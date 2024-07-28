@@ -3,7 +3,7 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chat-analyzer-test-ext"
+name = "chat-analyzer-skeleton-extension"
 version = "0.0.1"
 description = "A small example package"
 requires-python = ">= 3.11"
@@ -15,5 +15,5 @@ classifiers = [
 ]
 
 [project.entry-points."chat_analyzer.v1.blueprints"]
-inject_blueprint = "chat_analyzer_test_ext:inject_blueprint"
-inject_menu = "chat_analyzer_test_ext:inject_menu"
+inject_blueprint = "chat_analyzer_skeleton:inject_blueprint"
+inject_menu = "chat_analyzer_skeleton:inject_menu"
