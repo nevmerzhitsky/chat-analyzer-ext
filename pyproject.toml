@@ -1,5 +1,5 @@
 [project]
-name = "chat-analyzer-skeleton-extension"
+name = "chat-analyzer-extension-skeleton"
 version = "0.0.1"
 description = "An example of extending the Chat Analyzer application by the blueprint plugin"
 requires-python = ">= 3.11"
@@ -11,8 +11,8 @@ classifiers = [
 ]
 
 [project.entry-points."chat_analyzer.v1.blueprints"]
-inject_blueprint = "chat_analyzer_skeleton:inject_blueprint"
-inject_menu = "chat_analyzer_skeleton:inject_menu"
+inject_blueprint = "chat_analyzer_extension:inject_blueprint"
+inject_menu = "chat_analyzer_extension:inject_menu"
 
 [build-system]
 requires = [
@@ -21,4 +21,4 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
-"chat_analyzer_skeleton.templates.skeleton" = ["*.html"]
+"chat_analyzer_extension.templates.extension" = ["*.html"]
