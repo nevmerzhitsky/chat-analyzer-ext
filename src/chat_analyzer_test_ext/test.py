@@ -1,8 +1,8 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
-test_bp = Blueprint('test', __name__)
+test_bp = Blueprint('test', __name__, template_folder=f"./templates")
 
 
-@test_bp.route("/test-page", methods=["GET"])
+@test_bp.route("/", methods=["GET"])
 def test_page():
-    return "test works!"
+    return render_template("test/index.html")
