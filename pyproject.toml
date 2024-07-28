@@ -1,7 +1,7 @@
 [project]
 name = "chat-analyzer-skeleton-extension"
 version = "0.0.1"
-description = "A small example package"
+description = "An example of extending the Chat Analyzer application by the blueprint plugin"
 requires-python = ">= 3.11"
 classifiers = [
     "Programming Language :: Python :: 3",
